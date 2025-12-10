@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.urukcare.app-debug-51:/xml_backup_rules.xml.flat",
+        "source": "com.urukcare.app-main-53:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.urukcare.app-debug-51:/xml_data_extraction_rules.xml.flat",
+        "source": "com.urukcare.app-main-53:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.urukcare.app-debug-51:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.urukcare.app-main-53:/drawable/ic_launcher_foreground.xml"
+    }
+]

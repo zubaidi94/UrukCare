@@ -1,0 +1,36 @@
+com.urukcare.test.app-jetified-annotation-experimental-1.3.0-0 /Users/zubaidi/.gradle/caches/8.13/transforms/0708173196cbc47948623fd7539ca3a5/transformed/jetified-annotation-experimental-1.3.0/res
+com.urukcare.test.app-jetified-startup-runtime-1.1.1-1 /Users/zubaidi/.gradle/caches/8.13/transforms/0a9c7d7098b422715de673af16a0b31f/transformed/jetified-startup-runtime-1.1.1/res
+com.urukcare.test.app-jetified-activity-compose-1.8.1-2 /Users/zubaidi/.gradle/caches/8.13/transforms/1b967b3147e2161f69f5b1b7bfec4f88/transformed/jetified-activity-compose-1.8.1/res
+com.urukcare.test.app-jetified-emoji2-1.4.0-3 /Users/zubaidi/.gradle/caches/8.13/transforms/1cda1a2ad39124596f0a0e6265ea06bc/transformed/jetified-emoji2-1.4.0/res
+com.urukcare.test.app-lifecycle-viewmodel-2.6.2-4 /Users/zubaidi/.gradle/caches/8.13/transforms/2281bdf73a3e868492d409bf1bc63aec/transformed/lifecycle-viewmodel-2.6.2/res
+com.urukcare.test.app-jetified-activity-1.8.1-5 /Users/zubaidi/.gradle/caches/8.13/transforms/358f282c8479e5cb10dd03a7b7ea9f36/transformed/jetified-activity-1.8.1/res
+com.urukcare.test.app-jetified-core-ktx-1.12.0-6 /Users/zubaidi/.gradle/caches/8.13/transforms/38987bddee469cf98fd178d41c4b0238/transformed/jetified-core-ktx-1.12.0/res
+com.urukcare.test.app-core-1.12.0-7 /Users/zubaidi/.gradle/caches/8.13/transforms/396e032aae96a19f5d95643c90b995c4/transformed/core-1.12.0/res
+com.urukcare.test.app-jetified-ui-release-8 /Users/zubaidi/.gradle/caches/8.13/transforms/3beedde502abab61799adacce783c45e/transformed/jetified-ui-release/res
+com.urukcare.test.app-jetified-lifecycle-process-2.6.2-9 /Users/zubaidi/.gradle/caches/8.13/transforms/3f1c3621b7c3afd291bff93f894e7e95/transformed/jetified-lifecycle-process-2.6.2/res
+com.urukcare.test.app-jetified-savedstate-ktx-1.2.1-10 /Users/zubaidi/.gradle/caches/8.13/transforms/55527d78e4ee59795f739c63a319237a/transformed/jetified-savedstate-ktx-1.2.1/res
+com.urukcare.test.app-jetified-activity-ktx-1.8.1-11 /Users/zubaidi/.gradle/caches/8.13/transforms/5fd52d2d838bbae33656c4e00709a13c/transformed/jetified-activity-ktx-1.8.1/res
+com.urukcare.test.app-lifecycle-livedata-core-2.6.2-12 /Users/zubaidi/.gradle/caches/8.13/transforms/608e903a2ea2f85dcc96734bec05dff1/transformed/lifecycle-livedata-core-2.6.2/res
+com.urukcare.test.app-core-runtime-2.2.0-13 /Users/zubaidi/.gradle/caches/8.13/transforms/609a110b756fe8a2302fbb3bb464421c/transformed/core-runtime-2.2.0/res
+com.urukcare.test.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-14 /Users/zubaidi/.gradle/caches/8.13/transforms/63e8051bce0d6d4c62d5f633d54206b4/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/res
+com.urukcare.test.app-jetified-lifecycle-runtime-ktx-2.6.2-15 /Users/zubaidi/.gradle/caches/8.13/transforms/8249c676ece3822a65fe0d539831e484/transformed/jetified-lifecycle-runtime-ktx-2.6.2/res
+com.urukcare.test.app-jetified-runtime-saveable-release-16 /Users/zubaidi/.gradle/caches/8.13/transforms/964b00e76a3809281cf6ac6c2ca4fd22/transformed/jetified-runtime-saveable-release/res
+com.urukcare.test.app-lifecycle-runtime-2.6.2-17 /Users/zubaidi/.gradle/caches/8.13/transforms/99779e41d4f1d01e9c65a3374c4ac8ee/transformed/lifecycle-runtime-2.6.2/res
+com.urukcare.test.app-jetified-customview-poolingcontainer-1.0.0-18 /Users/zubaidi/.gradle/caches/8.13/transforms/9dcd9140746242e744b5b20b2676a688/transformed/jetified-customview-poolingcontainer-1.0.0/res
+com.urukcare.test.app-jetified-savedstate-1.2.1-19 /Users/zubaidi/.gradle/caches/8.13/transforms/a4c851cafe66b110216cd8be473728d0/transformed/jetified-savedstate-1.2.1/res
+com.urukcare.test.app-jetified-runtime-release-20 /Users/zubaidi/.gradle/caches/8.13/transforms/a4fb4ddffbacace0669e639f22a2fb54/transformed/jetified-runtime-release/res
+com.urukcare.test.app-jetified-ui-geometry-release-21 /Users/zubaidi/.gradle/caches/8.13/transforms/a630816c56290bd5e7979aed1e087429/transformed/jetified-ui-geometry-release/res
+com.urukcare.test.app-jetified-ui-test-junit4-release-22 /Users/zubaidi/.gradle/caches/8.13/transforms/a8af0caf8fc301696085bd51581d11fa/transformed/jetified-ui-test-junit4-release/res
+com.urukcare.test.app-jetified-ui-text-release-23 /Users/zubaidi/.gradle/caches/8.13/transforms/b2931401f55cfebbdfd471891bd6ac47/transformed/jetified-ui-text-release/res
+com.urukcare.test.app-jetified-profileinstaller-1.3.0-24 /Users/zubaidi/.gradle/caches/8.13/transforms/b3a2eb4d27ead99c9db7b41ac24478d8/transformed/jetified-profileinstaller-1.3.0/res
+com.urukcare.test.app-jetified-ui-graphics-release-25 /Users/zubaidi/.gradle/caches/8.13/transforms/b621c8bbd94e53124e5e3dc60d7ff2dd/transformed/jetified-ui-graphics-release/res
+com.urukcare.test.app-jetified-ui-util-release-26 /Users/zubaidi/.gradle/caches/8.13/transforms/bcb20fe3a2048cf075e671d0ae36ad66/transformed/jetified-ui-util-release/res
+com.urukcare.test.app-jetified-ui-unit-release-27 /Users/zubaidi/.gradle/caches/8.13/transforms/e26720338b3e7a5298e00bbb42356a8e/transformed/jetified-ui-unit-release/res
+com.urukcare.test.app-jetified-lifecycle-viewmodel-ktx-2.6.2-28 /Users/zubaidi/.gradle/caches/8.13/transforms/ebfee8bf389b4bf59b903c804884c05e/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/res
+com.urukcare.test.app-jetified-ui-test-release-29 /Users/zubaidi/.gradle/caches/8.13/transforms/fac8bf0769a53e14bc0b6f78bec05186/transformed/jetified-ui-test-release/res
+com.urukcare.test.app-jetified-core-1.5.0-30 /Users/zubaidi/.gradle/caches/8.13/transforms/fb3a11084c75944e766dd4a57301d50d/transformed/jetified-core-1.5.0/res
+com.urukcare.test.app-androidTest-31 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/generated/res/resValues/androidTest/debug
+com.urukcare.test.app-updated_navigation_xml-32 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/generated/updated_navigation_xml/debugAndroidTest
+com.urukcare.test.app-mergeDebugAndroidTestResources-33 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.urukcare.test.app-mergeDebugAndroidTestResources-34 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.urukcare.test.app-debugAndroidTest-35 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
