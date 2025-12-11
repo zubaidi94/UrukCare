@@ -36,6 +36,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.urukcare.ui.theme.PrimaryGreen
 
+/**
+ * HomeScreen displays the main landing page with logo, title, and search bar.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen() {
@@ -47,9 +50,10 @@ fun HomeScreen() {
             .background(Color.White)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+        verticalArrangement = Arrangement.Top
     ) {
-        // Logo (Green Circle with Cross and Pill)
+        Spacer(modifier = Modifier.height(60.dp))
+        
         Box(
             modifier = Modifier
                 .size(120.dp)
@@ -57,14 +61,12 @@ fun HomeScreen() {
                 .background(PrimaryGreen),
             contentAlignment = Alignment.Center
         ) {
-            // Main Cross
             Icon(
                 imageVector = Icons.Default.Add,
                 contentDescription = "Logo",
                 tint = Color.White,
                 modifier = Modifier.size(70.dp)
             )
-            // Pill Accent (Top Right)
             Box(
                 modifier = Modifier
                     .align(Alignment.TopEnd)
@@ -83,7 +85,7 @@ fun HomeScreen() {
                 fontWeight = FontWeight.Bold,
                 fontSize = 32.sp
             ),
-            color = Color(0xFF1B1F23) // Darker text
+            color = Color(0xFF1B1F23)
         )
 
         Spacer(modifier = Modifier.height(8.dp))
@@ -99,20 +101,54 @@ fun HomeScreen() {
 
         Spacer(modifier = Modifier.height(48.dp))
 
-        // Search Bar
         OutlinedTextField(
             value = searchQuery,
-            onValueChange = { searchQuery = it },
-            placeholder = { Text("Search medicines...", color = Color.Gray) },
-            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, tint = Color.Gray) },
-            modifier = Modifier.fillMaxWidth(),
+            onValueChange = { newValue ->
+                searchQuery = newValue
+                println("Search query changed: $newValue")
+            },
+            placeholder = { Text("Search medicines...") },
+            leadingIcon = { 
+                Icon(
+                    Icons.Default.Search, 
+                    contentDescription = "Search",
+                    tint = Color.Gray
+                ) 
+            },
+            modifier = Modifier
+                .fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                containerColor = Color.White,
-                unfocusedBorderColor = Color(0xFFE0E0E0),
-                focusedBorderColor = PrimaryGreen,
-                cursorColor = PrimaryGreen
-            )
+            colors = TextFieldDefaults.colors(
+                focusedContainerColor = Color.White,
+                unfocusedContainerColor = Color.White,
+                disabledContainerColor = Color.White,
+                focusedIndicatorColor = PrimaryGreen,
+                unfocusedIndicatorColor = Color(0xFFE0E0E0),
+                cursorColor = PrimaryGreen,
+                focusedPlaceholderColor = Color.Gray,
+                unfocusedPlaceholderColor = Color.Gray
+            ),
+            singleLine = true,
+            readOnly = false,
+            enabled = true
         )
+    }
+}
+
+/**
+ * Object providing metadata and utility methods for HomeScreen.
+ */
+object HomeScreenInfo {
+    const val SCREEN_NAME = "Home"
+    const val SCREEN_ROUTE = "home"
+    
+    fun getTitle(): String = "Home"
+    
+    fun getDescription(): String = "Search and browse medicines"
+    
+    fun printScreenInfo() {
+        println("Screen: $SCREEN_NAME")
+        println("Route: $SCREEN_ROUTE")
+        println("Description: ${getDescription()}")
     }
 }
