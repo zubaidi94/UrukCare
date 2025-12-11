@@ -82,7 +82,7 @@ fun AboutScreen() {
 
         Text(
             text = "Data Source: Demo Data",
-            style = MaterialTheme.typography.bodySmall.copy(color = Color.Gray),
+            style = MaterialTheme.typography.bodySmall.copy(color = Color.Red),
             textAlign = TextAlign.Center
         )
     }
