@@ -81,8 +81,8 @@ fun AboutScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Data Source: Demo Data",
-            style = MaterialTheme.typography.bodySmall.copy(color = Color.Red),
+            text = "Data Source: Sample Data for Development",
+            style = MaterialTheme.typography.bodySmall.copy(color = Color.Gray),
             textAlign = TextAlign.Center
         )
     }
