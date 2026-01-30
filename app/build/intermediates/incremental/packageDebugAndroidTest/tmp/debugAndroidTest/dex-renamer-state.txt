@@ -1,6 +1,6 @@
-#Thu Jan 22 14:19:07 CET 2026
-base.0=/Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
-base.1=/Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+#Sat Jan 31 00:39:04 CET 2026
+base.0=/Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 renamed.0=classes.dex

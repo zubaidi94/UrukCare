@@ -29,8 +29,8 @@ com.urukcare.test.app-core-1.12.0-27 /Users/zubaidi/.gradle/caches/8.13/transfor
 com.urukcare.test.app-lifecycle-livedata-core-2.6.2-28 /Users/zubaidi/.gradle/caches/8.13/transforms/ef4a6f1980317a7e4b3437bdbadf593f/transformed/lifecycle-livedata-core-2.6.2/res
 com.urukcare.test.app-jetified-savedstate-ktx-1.2.1-29 /Users/zubaidi/.gradle/caches/8.13/transforms/fb46ab72e325e3f494e67b65c79a73ed/transformed/jetified-savedstate-ktx-1.2.1/res
 com.urukcare.test.app-jetified-activity-ktx-1.8.1-30 /Users/zubaidi/.gradle/caches/8.13/transforms/ffd8dbfd2668317f01f99d60984f8bba/transformed/jetified-activity-ktx-1.8.1/res
-com.urukcare.test.app-androidTest-31 /Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/generated/res/resValues/androidTest/debug
-com.urukcare.test.app-updated_navigation_xml-32 /Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/generated/updated_navigation_xml/debugAndroidTest
-com.urukcare.test.app-mergeDebugAndroidTestResources-33 /Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.urukcare.test.app-mergeDebugAndroidTestResources-34 /Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.urukcare.test.app-debugAndroidTest-35 /Users/zubaidi/HTW/Mobile Computing /UrukCare-final version/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.urukcare.test.app-androidTest-31 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/generated/res/resValues/androidTest/debug
+com.urukcare.test.app-updated_navigation_xml-32 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/generated/updated_navigation_xml/debugAndroidTest
+com.urukcare.test.app-mergeDebugAndroidTestResources-33 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.urukcare.test.app-mergeDebugAndroidTestResources-34 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.urukcare.test.app-debugAndroidTest-35 /Users/zubaidi/HTW/Mobile Computing /UrukCareApp/UrukCare/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
