@@ -25,9 +25,10 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.urukcare.ui.navigation.Screen
 import com.urukcare.ui.theme.PrimaryGreen
+import com.urukcare.viewmodel.MainViewModel
 
 @Composable
-fun MainScreen() {
+fun MainScreen(viewModel: MainViewModel) {
     val navController = rememberNavController()
 
     Scaffold(
@@ -81,16 +82,26 @@ fun MainScreen() {
         Box(modifier = Modifier.padding(innerPadding)) {
             NavHost(navController = navController, startDestination = Screen.Home.route) {
                 composable(Screen.Home.route) {
-                    HomeScreen()
+                    HomeScreen(navController, viewModel)
                 }
                 composable(Screen.Categories.route) {
-                    CategoriesScreen()
+                    CategoriesScreen(navController)
                 }
                 composable(Screen.Favorites.route) {
-                    FavoritesScreen()
+                    FavoritesScreen(navController, viewModel)
                 }
                 composable(Screen.About.route) {
                     AboutScreen()
+                }
+                composable(Screen.MedicineList.route) { backStackEntry ->
+                    val category = backStackEntry.arguments?.getString("category")
+                    MedicineListScreen(navController, viewModel, category)
+                }
+                composable(Screen.MedicineDetail.route) { backStackEntry ->
+                    val medicineId = backStackEntry.arguments?.getString("medicineId")?.toIntOrNull()
+                    if (medicineId != null) {
+                        MedicineDetailScreen(navController, viewModel, medicineId)
+                    }
                 }
             }
         }

@@ -10,6 +10,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -22,10 +24,8 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -34,15 +34,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.urukcare.ui.theme.PrimaryGreen
+import com.urukcare.viewmodel.MainViewModel
 
-/**
- * HomeScreen displays the main landing page with logo, title, and search bar.
- */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen() {
-    var searchQuery by remember { mutableStateOf("") }
+fun HomeScreen(
+    navController: NavController,
+    viewModel: MainViewModel
+) {
+    val searchQuery by viewModel.searchQuery.collectAsState()
+    val searchResults by viewModel.searchResults.collectAsState()
 
     Column(
         modifier = Modifier
@@ -50,10 +53,9 @@ fun HomeScreen() {
             .background(Color.White)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Top
+        verticalArrangement = Arrangement.Center
     ) {
-        Spacer(modifier = Modifier.height(60.dp))
-        
+        // Logo (Green Circle with Cross and Pill)
         Box(
             modifier = Modifier
                 .size(120.dp)
@@ -61,12 +63,14 @@ fun HomeScreen() {
                 .background(PrimaryGreen),
             contentAlignment = Alignment.Center
         ) {
+            // Main Cross
             Icon(
-                imageVector = Icons.Default.Add,
+                imageVector = androidx.compose.material.icons.Icons.Default.Add,
                 contentDescription = "Logo",
                 tint = Color.White,
                 modifier = Modifier.size(70.dp)
             )
+            // Pill Accent (Top Right)
             Box(
                 modifier = Modifier
                     .align(Alignment.TopEnd)
@@ -85,7 +89,7 @@ fun HomeScreen() {
                 fontWeight = FontWeight.Bold,
                 fontSize = 32.sp
             ),
-            color = Color(0xFF1B1F23)
+            color = Color(0xFF1B1F23) // Darker text
         )
 
         Spacer(modifier = Modifier.height(8.dp))
@@ -101,54 +105,47 @@ fun HomeScreen() {
 
         Spacer(modifier = Modifier.height(48.dp))
 
+        // Search Bar
         OutlinedTextField(
             value = searchQuery,
-            onValueChange = { newValue ->
-                searchQuery = newValue
-                println("Search query changed: $newValue")
+            onValueChange = {
+                viewModel.onSearchQueryChanged(it)
             },
-            placeholder = { Text("Search medicines...") },
-            leadingIcon = { 
-                Icon(
-                    Icons.Default.Search, 
-                    contentDescription = "Search",
-                    tint = Color.Gray
-                ) 
-            },
+            placeholder = { Text("Search medicines...", color = Color.Gray) },
+            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, tint = Color.Gray) },
             modifier = Modifier
                 .fillMaxWidth(),
             shape = RoundedCornerShape(16.dp),
-            colors = TextFieldDefaults.colors(
-                focusedContainerColor = Color.White,
-                unfocusedContainerColor = Color.White,
-                disabledContainerColor = Color.White,
-                focusedIndicatorColor = PrimaryGreen,
-                unfocusedIndicatorColor = Color(0xFFE0E0E0),
-                cursorColor = PrimaryGreen,
-                focusedPlaceholderColor = Color.Gray,
-                unfocusedPlaceholderColor = Color.Gray
-            ),
-            singleLine = true,
-            readOnly = false,
-            enabled = true
+            colors = TextFieldDefaults.outlinedTextFieldColors(
+                containerColor = Color.White,
+                unfocusedBorderColor = Color(0xFFE0E0E0),
+                focusedBorderColor = PrimaryGreen,
+                cursorColor = PrimaryGreen
+            )
         )
-    }
-}
 
-/**
- * Object providing metadata and utility methods for HomeScreen.
- */
-object HomeScreenInfo {
-    const val SCREEN_NAME = "Home"
-    const val SCREEN_ROUTE = "home"
-    
-    fun getTitle(): String = "Home"
-    
-    fun getDescription(): String = "Search and browse medicines"
-    
-    fun printScreenInfo() {
-        println("Screen: $SCREEN_NAME")
-        println("Route: $SCREEN_ROUTE")
-        println("Description: ${getDescription()}")
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // Search Results
+        if (searchQuery.isNotEmpty()) {
+            if (searchResults.isEmpty()) {
+                Text(
+                    text = "No medicine found",
+                    style = MaterialTheme.typography.bodyMedium.copy(color = Color.Gray),
+                    modifier = Modifier.padding(top = 16.dp)
+                )
+            } else {
+                LazyColumn(
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    items(searchResults) { medicine ->
+                        MedicineItemCard(medicine) {
+                            navController.navigate(com.urukcare.ui.navigation.Screen.MedicineDetail.createRoute(medicine.id))
+                        }
+                    }
+                }
+            }
+        }
     }
 }

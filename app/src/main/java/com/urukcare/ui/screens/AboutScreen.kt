@@ -1,5 +1,6 @@
 package com.urukcare.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -23,11 +24,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.urukcare.ui.theme.PrimaryGreen
 
-/**
- * AboutScreen displays information about the UrukCare application.
- */
 @Composable
 fun AboutScreen() {
     Column(
@@ -66,7 +65,7 @@ fun AboutScreen() {
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = AboutScreenInfo.APP_VERSION,
+            text = "Version 1.0.0",
             style = MaterialTheme.typography.bodyMedium.copy(color = Color.Gray)
         )
 
@@ -81,30 +80,9 @@ fun AboutScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Data Source: Sample Data for Development",
+            text = "Data Source: Demo Data",
             style = MaterialTheme.typography.bodySmall.copy(color = Color.Gray),
             textAlign = TextAlign.Center
         )
-    }
-}
-
-/**
- * Object providing metadata and utility methods for AboutScreen.
- */
-object AboutScreenInfo {
-    const val SCREEN_NAME = "About"
-    const val SCREEN_ROUTE = "about"
-    const val APP_VERSION = "Version 1.0.0"
-    
-    fun getAppVersion(): String = APP_VERSION
-    
-    fun getTitle(): String = "About"
-    
-    fun getDescription(): String = "About UrukCare app"
-    
-    fun printScreenInfo() {
-        println("Screen: $SCREEN_NAME")
-        println("Route: $SCREEN_ROUTE")
-        println("App Version: $APP_VERSION")
     }
 }

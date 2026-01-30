@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.urukcare.app-mergeDebugResources-49:/values-bn/values-bn.xml",
+            "outputFile": "com.urukcare.app-mergeDebugResources-53:/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/396e032aae96a19f5d95643c90b995c4/transformed/core-1.12.0/res/values-bn/values-bn.xml",
+                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/ee0642c062276f6ed9a7821ba0138f89/transformed/core-1.12.0/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/3beedde502abab61799adacce783c45e/transformed/jetified-ui-release/res/values-bn/values-bn.xml",
+                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/c1a226e2770d8e6a15d562ff9e427e6b/transformed/jetified-ui-release/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/ef63879b54b2629ffb4d15a9c26be0a7/transformed/jetified-material3-1.1.1/res/values-bn/values-bn.xml",
+                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/2d0436c22edfbb49dcf931e66901e678/transformed/jetified-material3-1.1.1/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -4,24 +4,7 @@
             "outputFile": "com.urukcare.test.app-mergeDebugAndroidTestResources-32:/values-el/values-el.xml",
             "map": [
                 {
-                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/396e032aae96a19f5d95643c90b995c4/transformed/core-1.12.0/res/values-el/values-el.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,256,356,459,567,673,790",
-                        "endColumns": "97,102,99,102,107,105,116,100",
-                        "endOffsets": "148,251,351,454,562,668,785,886"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,23",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,203,306,406,509,617,723,2053",
-                        "endColumns": "97,102,99,102,107,105,116,100",
-                        "endOffsets": "198,301,401,504,612,718,835,2149"
-                    }
-                },
-                {
-                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/3beedde502abab61799adacce783c45e/transformed/jetified-ui-release/res/values-el/values-el.xml",
+                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/c1a226e2770d8e6a15d562ff9e427e6b/transformed/jetified-ui-release/res/values-el/values-el.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "840,939,1025,1126,1231,1323,1404,1498,1587,1677,1747,1815,1896,1978,2154,2233,2303",
                         "endColumns": "98,85,100,104,91,80,93,88,89,69,67,80,81,74,78,69,122",
                         "endOffsets": "934,1020,1121,1226,1318,1399,1493,1582,1672,1742,1810,1891,1973,2048,2228,2298,2421"
+                    }
+                },
+                {
+                    "source": "/Users/zubaidi/.gradle/caches/8.13/transforms/ee0642c062276f6ed9a7821ba0138f89/transformed/core-1.12.0/res/values-el/values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,256,356,459,567,673,790",
+                        "endColumns": "97,102,99,102,107,105,116,100",
+                        "endOffsets": "148,251,351,454,562,668,785,886"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,23",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,306,406,509,617,723,2053",
+                        "endColumns": "97,102,99,102,107,105,116,100",
+                        "endOffsets": "198,301,401,504,612,718,835,2149"
                     }
                 }
             ]
